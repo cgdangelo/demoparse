@@ -1,4 +1,4 @@
-module Halflife
+module Demoparse
   class DirectoryEntry < BinData::Record
     DIRECTORY_ENTRY_LENGTH = 92
 

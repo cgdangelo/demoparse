@@ -1,12 +1,12 @@
-# Halflife
+# Demoparse
 
-TODO: Write a gem description
+GoldSrc and Source demo parser based on [compLexity Demo Player](https://code.google.com/p/coldemoplayer/).
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'halflife'
+    gem 'demoparse'
 
 And then execute:
 
@@ -14,11 +14,11 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install halflife
+    $ gem install demoparse
 
 ## Usage
 
-TODO: Write usage instructions here
+TBD
 
 ## Contributing
 

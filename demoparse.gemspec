@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'halflife/version'
+require 'demoparse/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "halflife"
-  spec.version       = Halflife::VERSION
+  spec.name          = "demoparse"
+  spec.version       = Demoparse::VERSION
   spec.authors       = ["Charles D'Angelo"]
   spec.email         = ["c.g.dangelo@gmail.com"]
   spec.description   = %q{TODO: Write a gem description}

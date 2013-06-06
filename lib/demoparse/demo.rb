@@ -1,7 +1,7 @@
 require 'bindata'
-require 'halflife/header'
+require 'demoparse/header'
 
-module Halflife
+module Demoparse
   class Demo < BinData::Record
     header :header
   end

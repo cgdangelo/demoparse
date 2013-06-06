@@ -1,3 +1,3 @@
-module Halflife
+module Demoparse
   VERSION = "0.0.1"
 end
