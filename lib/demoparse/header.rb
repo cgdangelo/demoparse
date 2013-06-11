@@ -3,6 +3,7 @@ require 'demoparse/directory_entry'
 module Demoparse
   class Header < BinData::Record
     HEADER_LENGTH = 544
+
     endian :little
     count_bytes_remaining :bytes_remaining
 
