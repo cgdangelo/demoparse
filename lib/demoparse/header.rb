@@ -4,7 +4,7 @@ module Demoparse
   class Header < BinData::Record
     HEADER_LENGTH = 544
 
-    endian :little
+    endian   :little
     count_bytes_remaining :bytes_remaining
 
     string :gametype, :read_length => 8, :trim_padding => true
@@ -16,7 +16,7 @@ module Demoparse
 
     uint32le :directory_entries_offset, :check_value => lambda { bytes_remaining - 4 - (2 * DirectoryEntry::DIRECTORY_ENTRY_LENGTH) }
     int32le  :directory_entries_total, :adjust_offset => :directory_entries_offset, :check_value => 2, :value => lambda { directory_entries.length }
-    array  :directory_entries, :initial_length => :directory_entries_total do
+    array :directory_entries, :initial_length => :directory_entries_total do
       directory_entry :directory_entry
     end
   end
